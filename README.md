@@ -189,6 +189,7 @@ To update bot follow this step :
 ## IMPORTANT NOTE (READ IT THIS IS NOT DECORATION)
 DWYOR & Always use a new wallet when running the bot, I am not responsible for any loss of assets.
 
+This bot is unencrypted , use it to learn about how to interact with evm smart contract, so when there is any new testnet or airdrop in the future , you can just develop based on this bot template, but please give me a credit. star and fork it.
 
 ## CONTRIBUTE
 
