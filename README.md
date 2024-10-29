@@ -82,16 +82,18 @@ Network : Base Sepolia
 
 Mint TRWA 
 ➡️ Go to here : https://sepolia.basescan.org/address/0x219BA210Ef31613390df886763099D0eD35aa6B8#writeContract
-➖ Connect New Metamask 
-➖ Click Claim Token
+- Connect New Metamask 
+- Click Claim Token
+
 
 Mint USDC 
 ➡️ Go to here : https://base-sepolia.blockscout.com/address/0x6Ac3aB54Dc5019A2e57eCcb214337FF5bbD52897?tab=write_contract
-➖ Connect New Metamask 
-➖ Click Mint
-➖ Enter Your Address 
-➖ Input 1000000000 to mint USDC 
-➖ Done
+- Connect New Metamask 
+- Click Mint
+- Enter Your Address 
+- Input 1000000000 to mint USDC 
+- Done
+
 
 ➡️ Go to : https://launch.rwa.inc/
 ➖ Connect 
