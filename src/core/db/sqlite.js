@@ -6,6 +6,7 @@ class SQLITE {
     return open({
       filename: "./database.db",
       driver: sqlite3.Database,
+      timeout: 5000 // Set timeout to 5 seconds
     });
   }
 
@@ -25,12 +26,20 @@ class SQLITE {
 
   async insertData(address, txDate, type) {
     const db = await this.connectToDatabase();
+    await db.exec('BEGIN TRANSACTION');
+    try {
     await db.run(
       "INSERT INTO tx_log (address, tx_date, type) VALUES (?, ?, ?)",
       [address, txDate, type]
     );
+    await db.exec('COMMIT');
+    } catch (error) {
+    await db.exec('ROLLBACK');
+    throw error;
+    } finally {
     await db.close();
-  }
+    }
+    }
 
   async getTodayTxLog(address, type) {
     const db = await this.connectToDatabase();
